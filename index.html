@@ -25,12 +25,14 @@
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
+        <h1>
+            <img src="assets/images/Pokédex_logo.png" alt="Pokedex Logo" style="width: 200px;">
+        </h1>
 
         <ol id="pokemonList" class="pokemons">
-          <!-- ..... Pokemons here ..... -->
+            <!-- ..... Pokemons here ..... -->
         </ol>
-        
+
         <div class="pagination">
             <button id="loadMoreButton" type="button">
                 Load More
@@ -38,9 +40,17 @@
         </div>
     </section>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+    
+
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/pokemon-modal.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 
